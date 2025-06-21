@@ -7,8 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --color-background: #cbd5e1;
-      --color-background-alt: #64748b;
       --color-border-active: #64748b;
       --color-border-default: #94a3b8;
       --color-highlight: #cbd5e1;
@@ -30,15 +28,15 @@
 
     body {
       font-family: var(--font-family-body);
-      background-color: #f8fafc;
-      padding: 2rem;
-      max-width: 600px;
-      margin: auto;
+      background-color: transparent;
+      padding: 0;
     }
 
     .fs-form {
       display: grid;
       row-gap: 1.5rem;
+      padding: 1rem;
+      font-size: 16px;
     }
 
     .fs-field {
@@ -107,7 +105,7 @@
 </head>
 <body>
   <form
-    action="https://formspree.io/f/manjdzow"
+    action="https://formspree.io/f/{FORM_ID}"
     method="POST"
     class="fs-form"
     target="_top"
